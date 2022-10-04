@@ -8,11 +8,11 @@
     padding-right: 10px;
     padding-left: 10px;
 }
-
 h1{
     font-family: Verdana;
-    font-weight:500;
+    font-weight:600;
 }
+
 h3{
     font-family: Verdana;
     
@@ -20,9 +20,25 @@ h3{
 
 #Personal{ 
     padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 50%;
     border: 2px solid lightslategray;
     border-radius: 5px;
     margin-bottom: 10px;
+    background-color: aliceblue;
+    
+}
+
+
+
+input[type=text] {
+    border-radius: .3em;
+
+}
+
+li{
+    display: block;
+}
+
+form{
+    margin-left: 5em;
 }
