@@ -3,14 +3,14 @@
 
 <head>
     <title>Guitar Line</title>
-    <link rel="icon" type="image/x-icon" href="guitar.ico" />
+    <link rel="icon" type="image/x-icon" href="imgs/guitar.ico" />
     <link rel="stylesheet" href="receipt_style.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
-    <img id="bg" src="guitar-bckg.jpg" alt="">
+    <img id="bg" src="imgs/guitar-bckg.jpg" alt="">
     <div id="wrapper">
         <h1 style="margin-left: 10px;">Receipt
         </h1>
@@ -165,9 +165,9 @@
                                     icon: 'success',
                                     title: 'Purchase Successfull!',
                                     text: 'You have successfully purchased a guitar!',
-                                    confirmButtonColor: "#6c5ce7"
+                                    confirmButtonColor: "#00c9ff"
                                 }).then((result) => {
-                                    window.location.href = 'guitarshop_checkout.php';
+                                    window.location.href = 'index.html';
                                 })
                                 event.preventDefault();
                             }
