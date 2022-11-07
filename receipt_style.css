@@ -4,18 +4,21 @@
 *{
     font-family: 'Roboto';
 }
-#wrapper {
+body{
+    display: grid;
+    place-items:center;
+}
+#wrapper{
     border: 2px solid black;
     border-radius: 5px;
-    background: rgb(93, 103, 85);
-    background: radial-gradient(circle, rgba(93, 103, 85, 0.5970763305322129) 0%, rgba(53, 192, 221, 0.7455357142857143) 100%);
+    background: radial-gradient(circle, rgba(93, 103, 85, 0.779) 0%, rgba(60, 182, 206, 0.774) 100%);
     position: absolute;
     padding-right: 10px;
     padding-left: 10px;
-    left: 10%;
-    right: 10%;
-    top: 15%;
-    bottom: 30%;
+    height: 27.5em;
+    width: 68em;
+    margin-top: 40%;
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.6);
 }
 
 #Personal {
@@ -29,6 +32,7 @@
     top: 4em;
     left: 2em;
     right: 2em;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 
 }
 
@@ -44,6 +48,10 @@
     position: fixed;
     top: 0;
     left: 0;
+}
+
+hr{
+    background-color: #222;
 }
 
 
@@ -67,26 +75,15 @@
     background-color: rgb(44, 153, 174, 0.8);
 }
 
-.product:hover{
-	border: none;
-	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-	transform: scale(1.01);
-}
-
 .product > img{
-	width: 30%;
+	width: 20%;
 	height: 97%;
-	object-fit:contain;
+	object-fit: scale-down;
 	margin-top: 0.25%;
 	margin-bottom: 0.25%;
 	margin-left: 0.5%;
 	background-color: rgba(240, 248, 255, 0.412);
 }
-
-.product > img:hover{
-	transform: scale(1.04);
-}
-
 .product-info{
 	padding: 20px;
 	width: 100%;
@@ -103,7 +100,7 @@
 
 .cart-total{
     margin-top: 1em;
-	margin-bottom: 1em;
+	margin-bottom: -5em;
 	flex: 0.25;
 	margin-left: 20px;
 	padding: 20px;
@@ -119,20 +116,30 @@
 	font-size: 20px;
 }
 
-#sub{
-    width: 100%;
+#sub {
+    position: absolute;
+    bottom: 10%;
+    left: 72%;
+    right: 4%;
+    width: 247px;
     display: block;
     text-align: center;
-    height: 6%;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    transition: 1s ease-in-out;
+    height: 12px;
+    background-color: #222;
+    color: white; 
+    transition: 0.2s ease-in-out;
     font-size: 16px;
-    padding-bottom: 2em;
-    padding-top: 2%;
+    padding-bottom: 26px;
+    padding-top: 7px;
+    border-radius: 5px;
+    border: none;
 }
 
-#sub:hover{
-	background-color:rgba(53, 192, 221, 0.7455357142857143);
+
+#sub:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: rgb(55, 55, 55);
 }
+
+
+  

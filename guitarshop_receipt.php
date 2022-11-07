@@ -12,7 +12,7 @@
 
     <img id="bg" src="imgs/guitar-bckg.jpg" alt="">
     <div id="wrapper">
-        <h1 style="margin-left: 10px;">Receipt
+        <h1 style="margin-left: 10px;">Shopping Cart
         </h1>
 
         <div id="Personal">

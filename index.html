@@ -3,44 +3,46 @@
 
 <head>
     <title>Guitar Line</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="imgs/guitar.ico">
     <link rel="stylesheet" href="checkout_style.css">
 </head>
 
 <body>
-    <img id="bg" src="imgs/guitar-bckg.jpg" alt="bckg">
+    <img id="bg" src="imgs/waves.svg" alt="bckg">
     <div id="wrapper">
+        <script src="main.js"></script>
         <h1 style="margin-left: 10px; font-family: 'Roboto';">Guitar Line Checkout
         </h1>
 
         <div id="Personal">
             <div class="v1"></div>
 
-            <img src="imgs/number-one.png" alt="enka" height="50" width="50">
+            <img src="imgs/number-one.png" class="num2" alt="enka" height="50" width="50">
             <span class="title">Personal Info</span><br><br>
             <form style="margin-left: 3.5em ;" method="POST" action="guitarshop_receipt.php">
                 <label for="name">Full Name
                     <span style="color:#FF0000 ;">*</span></label><br>
-                <input type="text" id="name" placeholder="First" maxlength="30" required>
+                <input type="text" id="name" placeholder="First" maxlength="22" required>
                 <br><br>
-                <input type="text" id="lastName" placeholder="Last" maxlength="30" required>
+                <input type="text" id="lastName" placeholder="Last" maxlength="22" required>
                 <br>
                 <hr>
                 <label for="email">Email Address
                     <span style="color:#FF0000 ;">*</span></label><br>
-                <input id="email" placeholder="example@mail.com" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="40" required>
+                <input id="email" placeholder="example@mail.com" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="35" required>
                 <br>
                 <hr>
                 <label for="birth">Date of birth
                     <span style="color:#FF0000 ;">*</span></label><br>
-                <input type="date" id="birth" value="2022-01-01" min="1930-01-01" max="2022-01-01" required>
+                <input type="date" id="birth" value="2022-01-01" min="1930-01-01" max="2008-01-01" required>
                 <br>
                 <hr>
                 <label for="birth">Delivery Address
                     <span style="color:#FF0000 ;">*</span></label><br>
                 <input type="text" id="address" placeholder="Address" maxlength="40" required><br><br>
-                <select name="country" class="form-control" id="country">
-                    <option value="0" label="---Country--- " selected="selected">---Country---</option>
+                <select name="country" class="form-control" id="country" required>
+                    <option value="" label="---Country--- " disabled selected>---Country---</option>
                     <optgroup id="country-optgroup-Africa" label="Africa">
                         <option value="DZ" label="Algeria">Algeria</option>
                         <option value="AO" label="Angola">Angola</option>
@@ -55,7 +57,6 @@
                         <option value="KM" label="Comoros">Comoros</option>
                         <option value="CG" label="Congo - Brazzaville">Congo - Brazzaville</option>
                         <option value="CD" label="Congo - Kinshasa">Congo - Kinshasa</option>
-                        <option value="CI" label="Côte d’Ivoire">Côte d’Ivoire</option>
                         <option value="DJ" label="Djibouti">Djibouti</option>
                         <option value="EG" label="Egypt">Egypt</option>
                         <option value="GQ" label="Equatorial Guinea">Equatorial Guinea</option>
@@ -82,7 +83,6 @@
                         <option value="NE" label="Niger">Niger</option>
                         <option value="NG" label="Nigeria">Nigeria</option>
                         <option value="RW" label="Rwanda">Rwanda</option>
-                        <option value="RE" label="Réunion">Réunion</option>
                         <option value="SH" label="Saint Helena">Saint Helena</option>
                         <option value="SN" label="Senegal">Senegal</option>
                         <option value="SC" label="Seychelles">Seychelles</option>
@@ -91,7 +91,6 @@
                         <option value="ZA" label="South Africa">South Africa</option>
                         <option value="SD" label="Sudan">Sudan</option>
                         <option value="SZ" label="Swaziland">Swaziland</option>
-                        <option value="ST" label="São Tomé and Príncipe">São Tomé and Príncipe</option>
                         <option value="TZ" label="Tanzania">Tanzania</option>
                         <option value="TG" label="Togo">Togo</option>
                         <option value="TN" label="Tunisia">Tunisia</option>
@@ -141,13 +140,10 @@
                         <option value="PY" label="Paraguay">Paraguay</option>
                         <option value="PE" label="Peru">Peru</option>
                         <option value="PR" label="Puerto Rico">Puerto Rico</option>
-                        <option value="BL" label="Saint Barthélemy">Saint Barthélemy</option>
-                        <option value="KN" label="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
                         <option value="LC" label="Saint Lucia">Saint Lucia</option>
                         <option value="MF" label="Saint Martin">Saint Martin</option>
                         <option value="PM" label="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                        <option value="VC" label="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines
-                        </option>
+                        <option value="VC" label="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
                         <option value="SR" label="Suriname">Suriname</option>
                         <option value="TT" label="Trinidad and Tobago">Trinidad and Tobago</option>
                         <option value="TC" label="Turks and Caicos Islands">Turks and Caicos Islands</option>
@@ -191,8 +187,6 @@
                         <option value="OM" label="Oman">Oman</option>
                         <option value="PK" label="Pakistan">Pakistan</option>
                         <option value="PS" label="Palestinian Territories">Palestinian Territories</option>
-                        <option value="YD" label="People's Democratic Republic of Yemen">People's Democratic Republic of
-                            Yemen</option>
                         <option value="PH" label="Philippines">Philippines</option>
                         <option value="QA" label="Qatar">Qatar</option>
                         <option value="SA" label="Saudi Arabia">Saudi Arabia</option>
@@ -260,15 +254,11 @@
                         <option value="SK" label="Slovakia">Slovakia</option>
                         <option value="SI" label="Slovenia">Slovenia</option>
                         <option value="ES" label="Spain">Spain</option>
-                        <option value="SJ" label="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
                         <option value="SE" label="Sweden">Sweden</option>
                         <option value="CH" label="Switzerland">Switzerland</option>
                         <option value="UA" label="Ukraine">Ukraine</option>
-                        <option value="SU" label="Union of Soviet Socialist Republics">Union of Soviet Socialist
-                            Republics</option>
                         <option value="GB" label="United Kingdom">United Kingdom</option>
                         <option value="VA" label="Vatican City">Vatican City</option>
-                        <option value="AX" label="Åland Islands">Åland Islands</option>
                     </optgroup>
                     <optgroup id="country-optgroup-Oceania" label="Oceania">
                         <option value="AS" label="American Samoa">American Samoa</option>
@@ -278,14 +268,11 @@
                         <option value="IO" label="British Indian Ocean Territory">British Indian Ocean Territory
                         </option>
                         <option value="CX" label="Christmas Island">Christmas Island</option>
-                        <option value="CC" label="Cocos [Keeling] Islands">Cocos [Keeling] Islands</option>
                         <option value="CK" label="Cook Islands">Cook Islands</option>
                         <option value="FJ" label="Fiji">Fiji</option>
                         <option value="PF" label="French Polynesia">French Polynesia</option>
                         <option value="TF" label="French Southern Territories">French Southern Territories</option>
                         <option value="GU" label="Guam">Guam</option>
-                        <option value="HM" label="Heard Island and McDonald Islands">Heard Island and McDonald Islands
-                        </option>
                         <option value="KI" label="Kiribati">Kiribati</option>
                         <option value="MH" label="Marshall Islands">Marshall Islands</option>
                         <option value="FM" label="Micronesia">Micronesia</option>
@@ -300,21 +287,18 @@
                         <option value="PN" label="Pitcairn Islands">Pitcairn Islands</option>
                         <option value="WS" label="Samoa">Samoa</option>
                         <option value="SB" label="Solomon Islands">Solomon Islands</option>
-                        <option value="GS" label="South Georgia and the South Sandwich Islands">South Georgia and the
-                            South Sandwich Islands</option>
                         <option value="TK" label="Tokelau">Tokelau</option>
                         <option value="TO" label="Tonga">Tonga</option>
                         <option value="TV" label="Tuvalu">Tuvalu</option>
-                        <option value="UM" label="U.S. Minor Outlying Islands">U.S. Minor Outlying Islands</option>
                         <option value="VU" label="Vanuatu">Vanuatu</option>
-                        <option value="WF" label="Wallis and Futuna">Wallis and Futuna</option>
                     </optgroup>
                 </select>
                 <input type="number" id="zipcode" min="0" max="9999" placeholder="Zipcode" required><br>
                 <hr>
 
                 <a>Would you like to recieve product updates</a><br><br>
-                <input type="checkbox" id="upd" name="upd" value="yes"><label for="upd">Yes I would like to recieve
+                
+                <input type="checkbox" id="upd" name="upd" value="yes"><label for="upd" id="upd-label">Yes I would like to recieve
                     updates</label>
                 <br><br>
 
@@ -324,7 +308,7 @@
 
                 <div id="container-main">
 
-                    <img src="imgs/number-two.png" id="num2" height="50" width="50" alt="dvojka">
+                    <img src="imgs/number-two.png" class="num2" height="50" width="50" alt="dvojka">
                     <span class="title" style="height:50em; width:50em">Guitar Selection</span>
 
                     <label class="option_item">
@@ -374,7 +358,7 @@
                             <img src="imgs/jag.png" class="image-hover" alt="offset" style="height:100%; width:100%">
 
                         </span>
-                        <span class="name">Offset style</span>
+                        <span class="name">JAG-style</span>
                     </label><br>
                     <input type="submit" id="sub" name="sub" value="Next">
                 </div>
