@@ -4,6 +4,13 @@
 *{
     font-family: 'Roboto';
 }
+html {
+    background-image: url('../img/waves.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+
+}
 body{
     display: grid;
     place-items:center;
@@ -11,7 +18,7 @@ body{
 #wrapper{
     border: 2px solid black;
     border-radius: 5px;
-    background: radial-gradient(circle, rgba(93, 103, 85, 0.779) 0%, rgba(60, 182, 206, 0.774) 100%);
+    background-color:  #0088fedd;
     position: absolute;
     padding-right: 10px;
     padding-left: 10px;
@@ -72,7 +79,7 @@ hr{
     border-radius: 5px;
 	margin-bottom: 20px;
     margin-top: 1em;
-    background-color: rgb(44, 153, 174, 0.8);
+    background-color: #00aefbdd;
 }
 
 .product > img{
@@ -106,7 +113,7 @@ hr{
 	padding: 20px;
 	border: 2px solid black;
 	border-radius: 5px;
-    background-color: rgb(44, 153, 174, 0.8);
+    background-color: #00aefbdd;
 }
 
 .cart-total p{
