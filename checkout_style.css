@@ -4,6 +4,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: auto;
 }
 #wrapper{
     border: 2px solid black;
@@ -13,7 +14,7 @@ body{
     padding-right: 10px;
     padding-left: 10px;
     height: 44em;
-    width: 68em;
+    min-width: 68em;
     margin-top: 5%;
     box-shadow: 8px 8px 8px rgba(0,0,0,0.6);
 }
@@ -53,14 +54,17 @@ body{
 
 
 #bg {
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* Set rules to fill background */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    background-size: cover;
+      
+    /* Preserve aspet ratio */
+    min-width: 50%;
+    min-height: 50%;
+    max-width: 1920px;
+    max-height: 1080px;
 }
 
 /* vertical and horizontal lines*/
