@@ -293,20 +293,24 @@ form {
 
 .option_item .radio:checked~.inside.stGuitar img{
     opacity: 1;
+    scale: 1.01;
 
 }
 
 .option_item .radio:checked~.inside.tGuitar img{
     opacity: 1;
+    scale: 1.01;
 
 }
 
 .option_item .radio:checked~.inside.lpGuitar img{
     opacity: 1;  
+    scale: 1.01;
 }
 
 .option_item .radio:checked~.inside.offsetGuitar img{
     opacity: 1;
+    scale: 1.01;
 }
 
 .name {
