@@ -3,14 +3,14 @@
 
 <head>
     <title>Guitar Line</title>
-    <link rel="icon" type="image/x-icon" href="imgs/guitar.ico" />
-    <link rel="stylesheet" href="receipt_style.css">
+    <link rel="icon" type="image/x-icon" href="img/guitar.ico" />
+    <link rel="stylesheet" href="css/receipt_style.css">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
-    <img id="bg" src="imgs/guitar-bckg.jpg" alt="">
+    <img id="bg" src="img/guitar-bckg.jpg" alt="">
     <div id="wrapper">
         <h1 style="margin-left: 10px;">Shopping Cart
         </h1>
@@ -26,7 +26,7 @@
                         <?php
                         $radio_value = $_POST['guitarSelect'];
                         if ($radio_value == 'St') {
-                            echo "<img src=\"imgs/strat.png\" alt=\"product\">";
+                            echo "<img src=\"img/strat.png\" alt=\"product\">";
                             echo " <div class=\"product-info\">
         
                             <h3 class=\"product-name\">Fender Player Stratocaster PF SRD</h3>
@@ -58,7 +58,7 @@
 
                 </p>";
                         } else if ($radio_value == 'T-s') {
-                            echo "<img src=\"imgs/tele.png\" alt=\"product\">";
+                            echo "<img src=\"img/tele.png\" alt=\"product\">";
                             echo " <div class=\"product-info\">
         
                             <h3 class=\"product-name\">Fender Player Telecaster</h3>
@@ -90,7 +90,7 @@
 
                 </p>";
                         } else if ($radio_value == 'lp') {
-                            echo "<img src=\"imgs/lp.png\" alt=\"product\">";
+                            echo "<img src=\"img/lp.png\" alt=\"product\">";
                             echo " <div class=\"product-info\">
         
                             <h3 class=\"product-name\">Gibson Les Paul Standard 50s HCS</h3>
@@ -122,7 +122,7 @@
     
                     </p>";
                         } else if ($radio_value == 'offset') {
-                            echo "<img src=\"imgs/jag.png\" alt=\"product\">";
+                            echo "<img src=\"img/jag.png\" alt=\"product\">";
                             echo " <div class=\"product-info\">
         
                             <h3 class=\"product-name\">Fender Vintera 60s Jaguar OT</h3>
