@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html{
+    background-image: url(imgs/waves.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+   
+}
 body{
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
 }
 #wrapper{
     border: 2px solid black;
     border-radius: 5px;
-    background-color:#03c9e4dd;
+    background-color:#03cae4dd;
     position: relative;
     padding-right: 10px;
     padding-left: 10px;
@@ -49,25 +57,6 @@ body{
     box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
 
 }
-
-
-
-
-#bg {
-    /* Set rules to fill background */
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    background-size: cover;
-      
-    /* Preserve aspet ratio */
-    min-width: 50%;
-    min-height: 50%;
-    max-width: 1920px;
-    max-height: 1080px;
-}
-
-/* vertical and horizontal lines*/
 hr {
     width: 10em;
     position: inherit;
