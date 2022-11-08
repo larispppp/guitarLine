@@ -17,7 +17,7 @@ body {
 }
 
 #wrapper {
-    border: 2px solid black;
+
     border-radius: 5px;
     background-color: #0088fedd;
     position: relative;
@@ -31,7 +31,6 @@ body {
 
 #Personal {
     position: absolute;
-    border: 2px solid #002744;
     border-radius: 5px;
     overflow: hidden;
     padding-left: 2em;
@@ -71,7 +70,7 @@ hr {
 }
 
 .v1 {
-    border-left: 2px solid #002744;
+    border-left: 2px solid #00274452;
     margin-left: 22em;
     height: 100%;
     width: 2px;
@@ -266,7 +265,7 @@ form {
 
 .image-hover:hover {
     opacity: 1;
-    scale: 1.01;
+    scale: 1.001;
 }
 
 .image:hover {
@@ -292,24 +291,24 @@ form {
 
 .option_item .radio:checked~.inside.stGuitar img {
     opacity: 1;
-    scale: 1.01;
+    scale: 1.001;
 
 }
 
 .option_item .radio:checked~.inside.tGuitar img {
     opacity: 1;
-    scale: 1.01;
+    scale: 1.001;
 
 }
 
 .option_item .radio:checked~.inside.lpGuitar img {
     opacity: 1;
-    scale: 1.01;
+    scale: 1.001;
 }
 
 .option_item .radio:checked~.inside.offsetGuitar img {
     opacity: 1;
-    scale: 1.01;
+    scale: 1.001;
 }
 
 .name {

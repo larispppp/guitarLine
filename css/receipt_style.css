@@ -16,7 +16,6 @@ body{
     place-items:center;
 }
 #wrapper{
-    border: 2px solid black;
     border-radius: 5px;
     background-color:  #0088fedd;
     position: absolute;
@@ -30,7 +29,7 @@ body{
 
 #Personal {
     position: inherit;
-    border: 2px solid black;
+    background-color: #00aefbdd;
     border-radius: 5px;
     overflow: hidden;
     padding-left: 2em;
@@ -39,22 +38,8 @@ body{
     top: 4em;
     left: 2em;
     right: 2em;
-    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.2);
 
-}
-
-#bg {
-    min-height: 100%;
-    min-width: 1024px;
-
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 hr{
@@ -75,11 +60,11 @@ hr{
 	width: 100%;
 	height: 200px;
 	overflow: hidden;
-	border: 2px solid black;
+    background-color: #03cae4dd;
     border-radius: 5px;
 	margin-bottom: 20px;
     margin-top: 1em;
-    background-color: #00aefbdd;
+
 }
 
 .product > img{
@@ -111,9 +96,8 @@ hr{
 	flex: 0.25;
 	margin-left: 20px;
 	padding: 20px;
-	border: 2px solid black;
 	border-radius: 5px;
-    background-color: #00aefbdd;
+    background-color: #03cae4dd;
 }
 
 .cart-total p{
@@ -132,7 +116,7 @@ hr{
     display: block;
     text-align: center;
     height: 12px;
-    background-color: #222;
+    background-color: #002744;
     color: white; 
     transition: 0.2s ease-in-out;
     font-size: 16px;
