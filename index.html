@@ -10,7 +10,6 @@
 
 <body>
     <div id="wrapper">
-        <script src="main.js"></script>
         <h1 style="margin-left: 10px; font-family: 'Roboto';">Guitar Line Checkout
         </h1>
 
@@ -29,7 +28,8 @@
                 <hr>
                 <label for="email">Email Address
                     <span style="color:#FF0000 ;">*</span></label><br>
-                <input id="email" placeholder="example@mail.com" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="35" required>
+                <input id="email" placeholder="example@mail.com" type="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="35" required>
                 <br>
                 <hr>
                 <label for="birth">Date of birth
@@ -142,7 +142,8 @@
                         <option value="LC" label="Saint Lucia">Saint Lucia</option>
                         <option value="MF" label="Saint Martin">Saint Martin</option>
                         <option value="PM" label="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                        <option value="VC" label="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                        <option value="VC" label="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines
+                        </option>
                         <option value="SR" label="Suriname">Suriname</option>
                         <option value="TT" label="Trinidad and Tobago">Trinidad and Tobago</option>
                         <option value="TC" label="Turks and Caicos Islands">Turks and Caicos Islands</option>
@@ -295,16 +296,23 @@
                 <input type="number" id="zipcode" min="0" max="9999" maxlength="4" placeholder="Zipcode" required><br>
                 <hr>
                 <script>
-                    document.querySelectorAll('input[type="number"]').forEach(input=>{
-                        input.oninput = () =>{
-                            if(input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
+                    var x = document.querySelectorAll('input[type="number"]');
+                    x.forEach(input => {
+                        input.oninput = () => {
+                            if (input.value.length > input.maxLength) input.value = input.value.slice(0, input.maxLength);
                         };
+                    });
+                    document.querySelector('input[type="number"]').addEventListener("keypress", function (evt) {
+                        if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57) {
+                            evt.preventDefault();
+                        }
                     });
                 </script>
 
                 <a>Would you like to recieve product updates</a><br><br>
-                
-                <input type="checkbox" id="upd" name="upd" value="yes"><label for="upd" id="upd-label">Yes I would like to recieve
+
+                <input type="checkbox" id="upd" name="upd" value="yes"><label for="upd" id="upd-label">Yes I would like
+                    to recieve
                     updates</label>
                 <br><br>
 
@@ -322,7 +330,8 @@
                         <span class="inside stGuitar">
 
                             <img src="img/strat_bgd.png" class="image" alt="" style="height:100%; width:100%">
-                            <img src="img/strat-hover.png" id="strat" class="image" alt="hover" style="height:100%; width:100%">
+                            <img src="img/strat-hover.png" id="strat" class="image" alt="hover"
+                                style="height:100%; width:100%">
                             <img src="img/strat.png" class="image-hover" alt="stguitar" style="height:100%; width:100%">
 
 
@@ -336,7 +345,8 @@
                         <span class="inside tGuitar">
 
                             <img src="img/tele_bgd.png" class="image" alt="" style="height:100%; width:100%">
-                            <img src="img/tele-hover.png" id="tele" class="image" alt="tguitar" style="height:100%; width:100%">
+                            <img src="img/tele-hover.png" id="tele" class="image" alt="tguitar"
+                                style="height:100%; width:100%">
                             <img src="img/tele.png" class="image-hover" alt="tguitar" style="height:100%; width:100%">
 
                         </span>
@@ -348,7 +358,8 @@
                         <span class="inside lpGuitar">
 
                             <img src="img/lp_bgd.png" class="image" alt="" style="height:100%; width:100%">
-                            <img src="img/lp-hover.png" id="lp" class="image" alt="singlecut" style="height:100%; width:100%">
+                            <img src="img/lp-hover.png" id="lp" class="image" alt="singlecut"
+                                style="height:100%; width:100%">
                             <img src="img/lp.png" class="image-hover" alt="singlecut" style="height:100%; width:100%">
 
                         </span>
@@ -360,7 +371,8 @@
                         <span class="inside offsetGuitar">
 
                             <img src="img/jag_bgd.png" class="image" alt="" style="height:100%; width:100%">
-                            <img src="img/jag-hover.png" id="offset" class="image" alt="offset" style="height:100%; width:100%">
+                            <img src="img/jag-hover.png" id="offset" class="image" alt="offset"
+                                style="height:100%; width:100%">
                             <img src="img/jag.png" class="image-hover" alt="offset" style="height:100%; width:100%">
 
                         </span>
