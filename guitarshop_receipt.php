@@ -30,7 +30,7 @@
         
                             <h3 class=\"product-name\">Fender Player Stratocaster PF SRD</h3>
         
-                            <h4 class=\"product-price\">€1,089.00</h4>
+                            <h4 class=\"product-price\">1,089.00€</h4>
  
                         </div>
                                 
@@ -43,17 +43,17 @@
             
                     <p>
                     <span>Product</span>
-                   <span>€1,089.00</span>
+                   <span>1,089.00€</span>
                 </p>
             
                 <p>
                     <span>Tax 2% DDV</span>
-                    <span>€21.78</span>
+                    <span>21.78€</span>
                 </p>
                 <hr>
                 <p>
                 <span>Total Price</span>        
-                <span>€1,110.78</span>
+                <span>1,110.78€</span>
 
                 </p>";
                         } else if ($radio_value == 'T-s') {
@@ -62,7 +62,7 @@
         
                             <h3 class=\"product-name\">Fender Player Telecaster</h3>
         
-                            <h4 class=\"product-price\">€934.98</h4>
+                            <h4 class=\"product-price\">934.98€</h4>
  
                         </div>
                                 
@@ -75,17 +75,17 @@
             
                     <p>
                     <span>Product</span>
-                   <span>€934.98</span>
+                   <span>934.98€</span>
                 </p>
             
                 <p>
                     <span>Tax 2% DDV</span>
-                    <span>€18.70</span>
+                    <span>18.70€</span>
                 </p>
                 <hr>
                 <p>
                 <span>Total Price</span>        
-                <span>€953.68</span>
+                <span>953.68€</span>
 
                 </p>";
                         } else if ($radio_value == 'lp') {
@@ -94,7 +94,7 @@
         
                             <h3 class=\"product-name\">Gibson Les Paul Standard 50s HCS</h3>
         
-                            <h4 class=\"product-price\">€1999.99</h4>
+                            <h4 class=\"product-price\">1,999.99€</h4>
  
                         </div>
                                 
@@ -107,17 +107,17 @@
             
                     <p>
                         <span>Product</span>
-                       <span>€1,999.99</span>
+                       <span>1,999.99€</span>
                     </p>
                 
                     <p>
                         <span>Tax 2% DDV</span>
-                        <span>€39.90</span>
+                        <span>39.90€</span>
                     </p>
                     <hr>
                     <p>
                     <span>Total Price</span>        
-                    <span>€2,039.89</span>
+                    <span>2,039.89€</span>
     
                     </p>";
                         } else if ($radio_value == 'offset') {
@@ -126,7 +126,7 @@
         
                             <h3 class=\"product-name\">Fender Vintera 60s Jaguar OT</h3>
         
-                            <h4 class=\"product-price\">€1,079.00</h4>
+                            <h4 class=\"product-price\">1,079.00€</h4>
  
                         </div>
                                 
@@ -139,19 +139,19 @@
                         
                         <p>
                             <span>Product</span>
-                            <span>€1,079.99</span>
+                            <span>1,079.99€</span>
                         </p>
                         
                         <p>
                             <span>Tax 2% DDV</span>
-                            <span>€21.60</span>
+                            <span>21.60€</span>
                         </p>
                         <hr>
                         <p>
                             
                             <span>Total Price</span>
             
-                            <span>€1,100.60</span>
+                            <span>1,100.60€</span>
             
                         </p>";
                         }
